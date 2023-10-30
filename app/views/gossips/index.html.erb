@@ -1,0 +1,18 @@
+<center><strong><h1>Liste des Gossips</h1></strong></center>
+
+<h3><center><%= link_to 'Bienvenue', welcome_path('John') %></center></h3>
+
+<body>
+<main>
+<% @gossips.sample(3).each do |gossip| %> <!-- Utilise la méthode sample pour obtenir 3 potins aléatoires -->
+  <div>
+    <h2><%= link_to gossip.title, gossip_path(gossip) %></h2>
+    <p><%= gossip.content %></p>
+  </div>
+  <% end %>
+</main>
+</body>
+<footer>
+<center><%= link_to 'Team', team_path %> <!-- Ajoute ce lien vers la page Team --></center>
+<center><%= link_to 'Contact', contact_path %> <!-- Ajoute ce lien vers la page Contact --></center>
+</footer>

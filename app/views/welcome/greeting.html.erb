@@ -1,0 +1,10 @@
+<h1>Bienvenue <%= @name %> !</h1>
+<p>Ici, c'est notre super site de potins. Il est chouette, non ?</p>
+
+<% loop do %> <!-- Boucle infinie -->
+  <%= link_to "Bienvenue #{Faker::Name.first_name}", welcome_index_path(Faker::Name.first_name) %>
+  <br>
+<% end %>
+def index
+    # Ton code pour l'action index, si nécessaire
+  end
