@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+***********This README is full of Gossip ! Go and have a look !***********
 
-Things you may want to cover:
+To test it launch :
 
-* Ruby version
+bundle install
 
-* System dependencies
+rails db:create
 
-* Configuration
+rails db:migrate
 
-* Database creation
+rails db:seed
 
-* Database initialization
+rails s
 
-* How to run the test suite
+you can also access the elements of the database with rails c
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
